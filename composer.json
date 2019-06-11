@@ -1,0 +1,16 @@
+{
+    "name": "jasonweicn/miniframework-app-basic",
+    "description": "MiniFramework Basic Application Template",
+    "type": "project",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Jason Wei",
+            "email": "jasonwei06@hotmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "jasonweicn/miniframework": "~2.0.0"
+    }
+}
