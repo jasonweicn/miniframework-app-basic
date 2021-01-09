@@ -1,13 +1,13 @@
 MiniFramework Basic Application Template
-====================
+----------------------------------------
 
 这是一套基于 MiniFramework 的基础应用模板，开发者可以通过这个模板快速开始构建自己的 Web 应用。
 
 
 安装
-====================
+----------
 
-** 1.安装 Composer **
+### 1.安装 Composer
 
 > 如果已经安装好了 Composer 可跳过本节内容。
 
@@ -20,7 +20,7 @@ mv composer.phar /usr/local/bin/composer
 
 > Windows 和 MacOS 系统的开发者可前往 Composer 的官网 [https://getcomposer.org/](https://getcomposer.org/) 下载对应的安装包进行安装。
 
-** 2.通过 Composer 安装 MiniFramework 基础应用模板 **
+### 2.通过 Composer 安装 MiniFramework 基础应用模板
 
 在命令行执行如下命令：
 
@@ -31,10 +31,9 @@ composer create-project --prefer-dist --stability=dev jasonweicn/miniframework-a
 > 上述命令结尾的 myapp 为要创建的项目目录，可根据实际情况修改。
 
 
-配置
-====================
+### 3.配置
 
-** 1.配置应用入口文件 **
+#### 3.1.配置应用入口文件
 
 找到 myapp/Public/index.php 文件，这是应用的入口文件，可在其中定义所需的配置常量，例如：
 
@@ -63,13 +62,12 @@ require dirname(__DIR__) . DS . 'vendor' . DS . 'jasonweicn' . DS . 'miniframewo
 
 > 上述代码已经包含在文件中了，最后两行是引入 MiniFramework 框架，通常不需要进行修改即可使用。
 
-** 2.配置站点 **
+##### 3.2.配置站点
 
 请将 myapp/Public 目录配置到 Apache 或 Nginx 作为站点的根目录。
 
 
-运行
-====================
+### 4.运行
 
 完成所有配置后，可尝试通过浏览器访问，例如：
 
@@ -79,7 +77,7 @@ http://你的域名/index.php
 
 
 开源协议
-====================
+----------
 
 MiniFramework 遵循 `Apache License Version 2.0` 开源协议发布。
 
