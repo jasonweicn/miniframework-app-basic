@@ -30,7 +30,6 @@ composer create-project --prefer-dist --stability=dev jasonweicn/miniframework-a
 
 > 上述命令结尾的 myapp 为要创建的项目目录，可根据实际情况修改。
 
-
 ### 3.配置应用
 
 找到 myapp/Public/index.php 文件，这是应用的入口文件，可在其中定义所需的配置常量，例如：
@@ -63,7 +62,6 @@ require dirname(__DIR__) . DS . 'vendor' . DS . 'jasonweicn' . DS . 'miniframewo
 ### 4.配置站点
 
 请将 myapp/Public 目录配置到 Apache 或 Nginx 作为站点的根目录。
-
 
 ### 5.运行
 
