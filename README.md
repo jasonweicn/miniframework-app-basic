@@ -4,7 +4,7 @@ MiniFramework Basic Application Template
 这是一套基于 MiniFramework 的基础应用模板，开发者可以通过这个模板快速开始构建自己的 Web 应用。
 
 
-安装
+安装说明
 ----------
 
 ### 1.安装 Composer
@@ -31,9 +31,7 @@ composer create-project --prefer-dist --stability=dev jasonweicn/miniframework-a
 > 上述命令结尾的 myapp 为要创建的项目目录，可根据实际情况修改。
 
 
-### 3.配置
-
-#### 3.1.配置应用入口文件
+### 3.配置应用
 
 找到 myapp/Public/index.php 文件，这是应用的入口文件，可在其中定义所需的配置常量，例如：
 
@@ -62,12 +60,12 @@ require dirname(__DIR__) . DS . 'vendor' . DS . 'jasonweicn' . DS . 'miniframewo
 
 > 上述代码已经包含在文件中了，最后两行是引入 MiniFramework 框架，通常不需要进行修改即可使用。
 
-##### 3.2.配置站点
+### 4.配置站点
 
 请将 myapp/Public 目录配置到 Apache 或 Nginx 作为站点的根目录。
 
 
-### 4.运行
+### 5.运行
 
 完成所有配置后，可尝试通过浏览器访问，例如：
 
