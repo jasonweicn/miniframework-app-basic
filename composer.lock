@@ -1,0 +1,67 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "d0d404db1a9de4c1e72d1b275bda94f1",
+    "packages": [
+        {
+            "name": "jasonweicn/miniframework",
+            "version": "2.11.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jasonweicn/miniframework-core.git",
+                "reference": "9a3e6333b5b7f11b96e03a2cbd73c0cd9de5ebe6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jasonweicn/miniframework-core/zipball/9a3e6333b5b7f11b96e03a2cbd73c0cd9de5ebe6",
+                "reference": "9a3e6333b5b7f11b96e03a2cbd73c0cd9de5ebe6",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=7.2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Mini\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Jason Wei",
+                    "email": "jasonwei06@hotmail.com"
+                }
+            ],
+            "description": "Mini PHP Framework",
+            "support": {
+                "issues": "https://github.com/jasonweicn/miniframework-core/issues",
+                "source": "https://github.com/jasonweicn/miniframework-core/tree/2.11.1"
+            },
+            "time": "2024-10-25T00:39:37+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=7.2.0"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
+}
