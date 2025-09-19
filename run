@@ -1,0 +1,31 @@
+#!/usr/bin/env php
+<?php
+/**
+ * 命令行模式启动脚本
+ * 运行方式例如：<your_path>/run demo/info
+ */
+
+// 应用命名空间（请与应用所在目录名保持一致）
+const APP_NAMESPACE = 'App';
+
+// 应用路径
+const APP_PATH = __DIR__;
+
+// 命令行模式标识
+const CONSOLE_MODE = true;
+
+// 是否显示错误信息（命令行模式建议开启，默认值：false）
+const SHOW_ERROR = true;
+
+// 是否开启日志（命令行模式建议开启，默认值：false）
+const LOG_ON = true;
+
+// 兼容多平台的目录分隔符
+const DS = DIRECTORY_SEPARATOR;
+
+// 日志存储路径（LOG_MODE为1时生效）
+const LOG_PATH = APP_PATH . DS . 'Log' . DS . 'console-log';
+
+// 引入 MiniFramework 就是这么简单
+require __DIR__ . DS . 'vendor' . DS . 'autoload.php';
+require __DIR__ . DS . 'vendor' . DS . 'jasonweicn' . DS . 'miniframework' . DS . 'Bootstrap.php';
