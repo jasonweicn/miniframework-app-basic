@@ -23,8 +23,8 @@ RUN composer install --optimize-autoloader --prefer-dist
 # 再复制其他项目文件
 COPY . .
 
-# 设置权限 - 为日志目录和上传目录添加写权限
-RUN chown -R www-data:www-data /var/www/app/Cache /var/www/app/Log /var/www/app/Public/uploads
+# 设置权限 - 为日志目录、上传目录和依赖目录添加写权限
+RUN chown -R www-data:www-data /var/www/app/Cache /var/www/app/Log /var/www/app/Public/uploads /var/www/app/vendor
 
 
 EXPOSE 9000

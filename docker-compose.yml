@@ -18,6 +18,7 @@ services:
     container_name: miniframework-php
     volumes:
       - .:/var/www/app
+      - /var/www/app/vendor
     networks:
       - app-network
 
