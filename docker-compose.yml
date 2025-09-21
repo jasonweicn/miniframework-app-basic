@@ -1,0 +1,26 @@
+version: '2'
+
+services:
+  nginx:
+    image: nginx:stable-alpine
+    container_name: miniframework-nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./docker/nginx/conf.d:/etc/nginx/conf.d
+    depends_on:
+      - php
+    networks:
+      - app-network
+
+  php:
+    build: .
+    container_name: miniframework-php
+    volumes:
+      - .:/var/www/app
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
